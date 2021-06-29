@@ -12,10 +12,10 @@ Ingresar  el valor de p_key lo encuentras en la configuración de tu cuenta ePay
 $connStr = "host=ec2-52-6-77-239.compute-1.amazonaws.com port=5432 dbname=ddrda0o6v4jnpc user=bpwhogyrsszrzv password=466fff2061a9ed4f7933e50e62303b55bc278b19a99daed0a874c8653e899f51";
 
 //simple check
-// $conn = pg_connect($connStr) or die('failed');
+$conn = pg_connect($connStr) or die('failed');
 // $result = pg_query($conn, "select * from confirmacion");
 // var_dump(pg_fetch_all($result));
-// $_REQUEST['x_ref_payco']="asdfasdfasdf";
+// $_REQUEST['x_ref_payco']="prueba ".date("Y-m-d");
 $p_cust_id_cliente = '';
 $p_key             = '';
 
